@@ -13,6 +13,15 @@
 		515FB39E24C0D6D30026F2C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515FB39C24C0D6D30026F2C0 /* Main.storyboard */; };
 		515FB3A024C0D6D40026F2C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 515FB39F24C0D6D40026F2C0 /* Assets.xcassets */; };
 		515FB3A324C0D6D40026F2C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515FB3A124C0D6D40026F2C0 /* LaunchScreen.storyboard */; };
+		515FB3AB24C0D7C10026F2C0 /* A51BeginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515FB3AA24C0D7C10026F2C0 /* A51BeginViewController.swift */; };
+		515FB3AD24C0D7D20026F2C0 /* A51Decision2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515FB3AC24C0D7D20026F2C0 /* A51Decision2ViewController.swift */; };
+		515FB3AF24C0D7E00026F2C0 /* A51Decision3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515FB3AE24C0D7E00026F2C0 /* A51Decision3ViewController.swift */; };
+		515FB3B124C0D7EE0026F2C0 /* A51Decision4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515FB3B024C0D7EE0026F2C0 /* A51Decision4ViewController.swift */; };
+		515FB3B324C0D7FB0026F2C0 /* A51Decision5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515FB3B224C0D7FB0026F2C0 /* A51Decision5ViewController.swift */; };
+		515FB3B524C0D8090026F2C0 /* A51AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515FB3B424C0D8090026F2C0 /* A51AchievementsViewController.swift */; };
+		515FB3B724C0D8180026F2C0 /* A51FailureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515FB3B624C0D8180026F2C0 /* A51FailureViewController.swift */; };
+		515FB3B924C16B000026F2C0 /* trumpet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 515FB3B824C16B000026F2C0 /* trumpet.mp3 */; };
+		515FB3BD24C1F1240026F2C0 /* Fail.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 515FB3BC24C1F1230026F2C0 /* Fail.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,15 @@
 		515FB39F24C0D6D40026F2C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		515FB3A224C0D6D40026F2C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		515FB3A424C0D6D40026F2C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		515FB3AA24C0D7C10026F2C0 /* A51BeginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A51BeginViewController.swift; sourceTree = "<group>"; };
+		515FB3AC24C0D7D20026F2C0 /* A51Decision2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A51Decision2ViewController.swift; sourceTree = "<group>"; };
+		515FB3AE24C0D7E00026F2C0 /* A51Decision3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A51Decision3ViewController.swift; sourceTree = "<group>"; };
+		515FB3B024C0D7EE0026F2C0 /* A51Decision4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A51Decision4ViewController.swift; sourceTree = "<group>"; };
+		515FB3B224C0D7FB0026F2C0 /* A51Decision5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A51Decision5ViewController.swift; sourceTree = "<group>"; };
+		515FB3B424C0D8090026F2C0 /* A51AchievementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A51AchievementsViewController.swift; sourceTree = "<group>"; };
+		515FB3B624C0D8180026F2C0 /* A51FailureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A51FailureViewController.swift; sourceTree = "<group>"; };
+		515FB3B824C16B000026F2C0 /* trumpet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trumpet.mp3; sourceTree = "<group>"; };
+		515FB3BC24C1F1230026F2C0 /* Fail.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fail.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +77,19 @@
 				515FB39624C0D6D30026F2C0 /* AppDelegate.swift */,
 				515FB39824C0D6D30026F2C0 /* SceneDelegate.swift */,
 				515FB39A24C0D6D30026F2C0 /* ViewController.swift */,
+				515FB3AA24C0D7C10026F2C0 /* A51BeginViewController.swift */,
+				515FB3AC24C0D7D20026F2C0 /* A51Decision2ViewController.swift */,
+				515FB3AE24C0D7E00026F2C0 /* A51Decision3ViewController.swift */,
+				515FB3B024C0D7EE0026F2C0 /* A51Decision4ViewController.swift */,
+				515FB3B224C0D7FB0026F2C0 /* A51Decision5ViewController.swift */,
+				515FB3B624C0D8180026F2C0 /* A51FailureViewController.swift */,
+				515FB3B424C0D8090026F2C0 /* A51AchievementsViewController.swift */,
 				515FB39C24C0D6D30026F2C0 /* Main.storyboard */,
 				515FB39F24C0D6D40026F2C0 /* Assets.xcassets */,
 				515FB3A124C0D6D40026F2C0 /* LaunchScreen.storyboard */,
 				515FB3A424C0D6D40026F2C0 /* Info.plist */,
+				515FB3BC24C1F1230026F2C0 /* Fail.mp3 */,
+				515FB3B824C16B000026F2C0 /* trumpet.mp3 */,
 			);
 			path = travelQuestAdventure;
 			sourceTree = "<group>";
@@ -125,9 +152,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				515FB3B924C16B000026F2C0 /* trumpet.mp3 in Resources */,
 				515FB3A324C0D6D40026F2C0 /* LaunchScreen.storyboard in Resources */,
 				515FB3A024C0D6D40026F2C0 /* Assets.xcassets in Resources */,
 				515FB39E24C0D6D30026F2C0 /* Main.storyboard in Resources */,
+				515FB3BD24C1F1240026F2C0 /* Fail.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +167,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				515FB3B324C0D7FB0026F2C0 /* A51Decision5ViewController.swift in Sources */,
+				515FB3AF24C0D7E00026F2C0 /* A51Decision3ViewController.swift in Sources */,
 				515FB39B24C0D6D30026F2C0 /* ViewController.swift in Sources */,
 				515FB39724C0D6D30026F2C0 /* AppDelegate.swift in Sources */,
+				515FB3AB24C0D7C10026F2C0 /* A51BeginViewController.swift in Sources */,
+				515FB3B724C0D8180026F2C0 /* A51FailureViewController.swift in Sources */,
+				515FB3AD24C0D7D20026F2C0 /* A51Decision2ViewController.swift in Sources */,
 				515FB39924C0D6D30026F2C0 /* SceneDelegate.swift in Sources */,
+				515FB3B524C0D8090026F2C0 /* A51AchievementsViewController.swift in Sources */,
+				515FB3B124C0D7EE0026F2C0 /* A51Decision4ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

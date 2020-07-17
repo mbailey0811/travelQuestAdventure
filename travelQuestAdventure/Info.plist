@@ -4,6 +4,10 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>We need to access the media library for this app.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>We need to access the camera for this app.</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

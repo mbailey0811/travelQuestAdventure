@@ -12,7 +12,7 @@ class A51Decision2ViewController: UIViewController {
     var a51Decision2InfoText : String!
     var a51Decision2Op1Text : String!
     var a51Decision2Op2Text : String!
-    
+    var name : String!
     @IBOutlet weak var welcomePA: UILabel!
     
     @IBOutlet weak var popPA: UILabel!
@@ -72,7 +72,7 @@ class A51Decision2ViewController: UIViewController {
                    vc.a51KansasInfoText = "You finally made it to Kansas. You're halfway across the country! Your truck still has gas, so would you like to keep going or stop and talk to locals?"
                    vc.a51KansasOp1Text = "Stop to Talk 💬"
                    vc.a51KansasOp2Text = "Keep Driving 🚛"
-                   
+                    vc.name = name
                }
                
                else if segue.identifier == "lancasterOp1Segue" {
@@ -81,7 +81,7 @@ class A51Decision2ViewController: UIViewController {
                    vc.a51KansasInfoText = "You finally made it to Kansas. You're halfway across the country! Would you like to stop for a meal in a local diner or take a bicycle and continue on the path?"
                    vc.a51KansasOp1Text = "Stop to Eat 🍕"
                    vc.a51KansasOp2Text = "Take the Bike 🚲"
-                   
+                vc.name = name
                }
                
     }

@@ -12,8 +12,9 @@ import AVFoundation
 class A51AchievementsViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     @IBOutlet weak var nameCongratsLabel: UILabel!
     @IBOutlet weak var pickPhotoButton: UIButton!
+    @IBOutlet weak var winnerName: UILabel!
     var audioPlayer: AVAudioPlayer?
-    
+    var name : String!
     @IBOutlet weak var selfieButton: UIButton!
     
      var imagePicker = UIImagePickerController()
@@ -21,24 +22,25 @@ class A51AchievementsViewController: UIViewController, UIImagePickerControllerDe
     @IBOutlet weak var imageView: UIImageView!
     //hello world
        override func viewDidLoad() {
-         super.viewDidLoad()
-        selfieButton.layer.masksToBounds = true
-        selfieButton.layer.cornerRadius = 15
+            super.viewDidLoad()
+            winnerName.text = name
+            selfieButton.layer.masksToBounds = true
+            selfieButton.layer.cornerRadius = 15
         
-        let path = Bundle.main.path(forResource: "trumpet.mp3", ofType:nil)!
-        let url = URL(fileURLWithPath: path)
+            let path = Bundle.main.path(forResource: "trumpet.mp3", ofType:nil)!
+            let url = URL(fileURLWithPath: path)
 
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOf: url)
-            audioPlayer?.play()
-        } catch {
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {
             // couldn't load file :(
         }
         
         
-        pickPhotoButton.layer.masksToBounds = true
-        pickPhotoButton.layer.cornerRadius = 15
-         imagePicker.delegate = self
+            pickPhotoButton.layer.masksToBounds = true
+            pickPhotoButton.layer.cornerRadius = 15
+            imagePicker.delegate = self
          //imageView.isHidden = true
        }
 

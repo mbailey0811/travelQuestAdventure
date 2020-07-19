@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var descriptionStoryA51: UILabel!
     
     @IBOutlet weak var goButtonImage: UIButton!
-    var userName : String! = ""
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +42,15 @@ class ViewController: UIViewController {
         }
         greetingLabel.isHidden = false
         a51Button.isHidden = false
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           
+          if segue.identifier == "startArea51" {
+               let vc = segue.destination as! A51BeginViewController
+            vc.name = nameTextField.text!
+               
+               
+           }
     }
     
 }

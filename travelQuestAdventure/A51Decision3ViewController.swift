@@ -12,7 +12,7 @@ class A51Decision3ViewController: UIViewController {
     var a51KansasInfoText : String!
     var a51KansasOp1Text : String!
     var a51KansasOp2Text : String!
-    
+    var name : String!
     @IBOutlet weak var welcomeKS: UILabel!
     
     @IBOutlet weak var popKS: UILabel!
@@ -78,6 +78,7 @@ class A51Decision3ViewController: UIViewController {
             vc.coloradoInfoText = "Welcome to the mountains! When you stopped to talk, the stranger told you that you should use a rope to climb. Will you follow their advice?"
             vc.coloradoOp1Text = "Climb with Rope🧗"
             vc.coloradoOp2Text = "Climb with Axes⛏"
+            vc.name = name
             
         }
         
@@ -87,6 +88,7 @@ class A51Decision3ViewController: UIViewController {
             vc.coloradoInfoText = "Welcome to the mountains! When you stopped to eat, a stranger at a nearby table advised that you use axes to climb the mountain. Will you follow their advice?"
             vc.coloradoOp1Text = "Climb with Rope🧗"
             vc.coloradoOp2Text = "Climb with Axes⛏"
+            vc.name = name
             
         }
         

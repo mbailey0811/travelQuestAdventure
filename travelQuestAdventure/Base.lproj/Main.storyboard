@@ -84,7 +84,7 @@
                                 </constraints>
                                 <state key="normal" title="Let's Go!" image="goButton"/>
                                 <connections>
-                                    <segue destination="Xyo-o8-tKH" kind="show" id="82p-jU-R5b"/>
+                                    <segue destination="Xyo-o8-tKH" kind="show" identifier="startArea51" id="82p-jU-R5b"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQ3-eq-H54">
@@ -660,7 +660,7 @@
                                 <color key="shadowColor" red="0.1810104847" green="0.36960649490000003" blue="0.52550888060000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <size key="shadowOffset" width="-5" height="2"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEGAN!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H42-ZB-BP1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shoshana!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H42-ZB-BP1">
                                 <rect key="frame" x="50" y="110" width="314" height="43"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                                 <color key="textColor" red="0.84202855830000001" green="1" blue="0.61169463400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -753,6 +753,7 @@
                         <outlet property="nameCongratsLabel" destination="H42-ZB-BP1" id="UMh-yX-pqf"/>
                         <outlet property="pickPhotoButton" destination="fgs-NM-4bD" id="Ozw-5h-9dF"/>
                         <outlet property="selfieButton" destination="DWA-Va-mF7" id="hjG-XL-6qi"/>
+                        <outlet property="winnerName" destination="H42-ZB-BP1" id="LYX-jw-0iR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1pI-vv-BCK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -13,6 +13,7 @@ class A51Decision2ViewController: UIViewController {
     var a51Decision2Op1Text : String!
     var a51Decision2Op2Text : String!
     var name : String!
+    var point2 : Int = 0
     @IBOutlet weak var welcomePA: UILabel!
     
     @IBOutlet weak var popPA: UILabel!
@@ -67,12 +68,13 @@ class A51Decision2ViewController: UIViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
          if segue.identifier == "lancasterOp1Segue" && a51Decision2Op1Text == "Stay on the path 🗺" {
-                   
+                   point2 = point2 + 20
                    let vc = segue.destination as! A51Decision3ViewController
                    vc.a51KansasInfoText = "You finally made it to Kansas. You're halfway across the country! Your truck still has gas, so would you like to keep going or stop and talk to locals?"
                    vc.a51KansasOp1Text = "Stop to Talk 💬"
                    vc.a51KansasOp2Text = "Keep Driving 🚛"
                     vc.name = name
+                vc.point3 = point2
                }
                
                else if segue.identifier == "lancasterOp1Segue" {
@@ -82,6 +84,8 @@ class A51Decision2ViewController: UIViewController {
                    vc.a51KansasOp1Text = "Stop to Eat 🍕"
                    vc.a51KansasOp2Text = "Take the Bike 🚲"
                 vc.name = name
+                point2 = point2 + 20
+               vc.point3 = point2
                }
                
     }

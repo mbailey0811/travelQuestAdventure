@@ -14,6 +14,7 @@ class A51Decision4ViewController: UIViewController {
     var coloradoOp1Text : String!
     var coloradoOp2Text : String!
     var name : String!
+     var point4 : Int = 0
     @IBOutlet weak var welcomeCO: UILabel!
     
     @IBOutlet weak var popCO: UILabel!
@@ -72,8 +73,17 @@ class A51Decision4ViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       let vc = segue.destination as! A51Decision5ViewController
-        vc.name = name
+        if segue.identifier == "colaradoOp1" {
+            let vc = segue.destination as! A51Decision5ViewController
+            point4 = point4 + 20
+            vc.name = name
+            vc.point5 = point4
+        }else{
+            let vc = segue.destination as! A51Decision5ViewController
+            point4 = point4 + 10
+            vc.name = name
+            vc.point5 = point4
+        }
     }
     
 

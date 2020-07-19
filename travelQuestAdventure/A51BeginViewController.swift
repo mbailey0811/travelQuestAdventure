@@ -21,7 +21,8 @@ class A51BeginViewController: UIViewController {
     @IBOutlet weak var carButton: UIButton!
     
     @IBOutlet weak var truckButton: UIButton!
-    var name : String = ""
+    var name : String!
+    var point1 : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +45,7 @@ class A51BeginViewController: UIViewController {
         
         truckButton.layer.masksToBounds = true
         truckButton.layer.cornerRadius = 15
-        print(name)
+        
         // Do any additional setup after loading the view.
     }
     func assignbackground(){
@@ -68,18 +69,23 @@ class A51BeginViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
        if segue.identifier == "sportsCarSegue" {
+            point1 = 10
             let vc = segue.destination as! A51Decision2ViewController
             vc.a51Decision2InfoText = "You ran out of gas, so you must hitchhike. You come across a map and a compass. Which one would you like to take?"
             vc.a51Decision2Op1Text = "Map 🗺"
             vc.a51Decision2Op2Text = "Compass 🧭"
             vc.name = name
+            vc.point2 = point1
+            
             
         } else if segue.identifier == "truckSegue" {
+            point1 = 20
             let vc = segue.destination as! A51Decision2ViewController
             vc.a51Decision2InfoText = "You come across a local who says he knows a shortcut. If you want to take the shortcut, you must take him with you. What will you choose?"
             vc.a51Decision2Op1Text = "Stay on the path 🗺"
             vc.a51Decision2Op2Text = "Take the shortcut ⏰"
              vc.name = name
+            vc.point2 = point1
         }
     }
     

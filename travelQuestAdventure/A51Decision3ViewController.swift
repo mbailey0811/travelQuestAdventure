@@ -13,6 +13,7 @@ class A51Decision3ViewController: UIViewController {
     var a51KansasOp1Text : String!
     var a51KansasOp2Text : String!
     var name : String!
+    var point3 : Int = 0
     @IBOutlet weak var welcomeKS: UILabel!
     
     @IBOutlet weak var popKS: UILabel!
@@ -73,22 +74,24 @@ class A51Decision3ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "kansasOp1Segue" && a51KansasOp1Text == "Stop to Talk 💬" {
-            
+            point3 = point3 + 20
             let vc = segue.destination as! A51Decision4ViewController
             vc.coloradoInfoText = "Welcome to the mountains! When you stopped to talk, the stranger told you that you should use a rope to climb. Will you follow their advice?"
             vc.coloradoOp1Text = "Climb with Rope🧗"
             vc.coloradoOp2Text = "Climb with Axes⛏"
             vc.name = name
+            vc.point4 = point3
             
         }
         
         else if segue.identifier == "kansasOp1Segue" && a51KansasOp1Text == "Stop to Eat 🍕" {
-            
+            point3 = point3 + 20
             let vc = segue.destination as! A51Decision4ViewController
-            vc.coloradoInfoText = "Welcome to the mountains! When you stopped to eat, a stranger at a nearby table advised that you use axes to climb the mountain. Will you follow their advice?"
+            vc.coloradoInfoText = "Welcome to the mountains! When you stopped to eat, a stranger at a nearby table advised that you use rope to climb the mountain. Will you follow their advice?"
             vc.coloradoOp1Text = "Climb with Rope🧗"
             vc.coloradoOp2Text = "Climb with Axes⛏"
             vc.name = name
+            vc.point4 = point3
             
         }
         

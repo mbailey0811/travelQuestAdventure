@@ -22,7 +22,7 @@ class A51Decision5ViewController: UIViewController {
     var a51Area51Op1Text : String!
     var a51Area51Op2Text : String!
     var name : String!
-    
+     var point5 : Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -67,8 +67,17 @@ class A51Decision5ViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "organizedAnswer"{
+            let vc = segue.destination as! A51AchievementsViewController
+            vc.name = name
+            point5 = point5 + 20
+            vc.finalPoints = point5
+        }else{
         let vc = segue.destination as! A51AchievementsViewController
         vc.name = name
+            point5 = point5 + 10
+            vc.finalPoints = point5
+        }
     }
     
 

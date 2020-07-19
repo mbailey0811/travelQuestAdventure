@@ -15,7 +15,9 @@ class A51AchievementsViewController: UIViewController, UIImagePickerControllerDe
     @IBOutlet weak var winnerName: UILabel!
     var audioPlayer: AVAudioPlayer?
     var name : String!
+    var finalPoints : Int = 0
     @IBOutlet weak var selfieButton: UIButton!
+    @IBOutlet weak var Points: UILabel!
     
      var imagePicker = UIImagePickerController()
        
@@ -23,7 +25,8 @@ class A51AchievementsViewController: UIViewController, UIImagePickerControllerDe
     //hello world
        override func viewDidLoad() {
             super.viewDidLoad()
-            winnerName.text = name
+            Points.text = "Points: \(String(finalPoints))"
+            winnerName.text = "\(String(name))!"
             selfieButton.layer.masksToBounds = true
             selfieButton.layer.cornerRadius = 15
         

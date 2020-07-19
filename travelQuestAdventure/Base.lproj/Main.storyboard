@@ -453,7 +453,7 @@
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="YSG-nD-AKQ" kind="show" id="SQ1-Ma-I1v"/>
+                                    <segue destination="YSG-nD-AKQ" kind="show" identifier="coloradoOp2" id="SQ1-Ma-I1v"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGr-W6-xYL">
@@ -462,7 +462,7 @@
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="YSG-nD-AKQ" kind="show" id="YEv-bD-QbW"/>
+                                    <segue destination="YSG-nD-AKQ" kind="show" identifier="colaradoOp1" id="YEv-bD-QbW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -539,7 +539,7 @@
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="Friendly🎂"/>
                                 <connections>
-                                    <segue destination="sua-uI-ZnV" kind="show" id="UWV-HG-zTe"/>
+                                    <segue destination="sua-uI-ZnV" kind="show" identifier="FriendlyAnswer" id="UWV-HG-zTe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yA-e5-NMV">
@@ -548,7 +548,7 @@
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="Organized👽"/>
                                 <connections>
-                                    <segue destination="sua-uI-ZnV" kind="show" id="SGn-3k-IZa"/>
+                                    <segue destination="sua-uI-ZnV" kind="show" identifier="organizedAnswer" id="SGn-3k-IZa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -749,6 +749,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="KR9-Rb-wJz"/>
                     <connections>
+                        <outlet property="Points" destination="icL-Q5-US7" id="OYo-3o-Qfp"/>
                         <outlet property="imageView" destination="i87-38-BBm" id="jRO-O3-Xst"/>
                         <outlet property="nameCongratsLabel" destination="H42-ZB-BP1" id="UMh-yX-pqf"/>
                         <outlet property="pickPhotoButton" destination="fgs-NM-4bD" id="Ozw-5h-9dF"/>
@@ -764,7 +765,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="SGn-3k-IZa"/>
         <segue reference="rMS-uU-qKy"/>
-        <segue reference="SQ1-Ma-I1v"/>
+        <segue reference="YEv-bD-QbW"/>
         <segue reference="JpH-FL-fm3"/>
         <segue reference="gbD-eM-OEv"/>
     </inferredMetricsTieBreakers>
